@@ -1,0 +1,36 @@
+{
+  "name": "pivot_track",
+  "private": true,
+  "scripts": {
+    "start": "webpack --watch --mode=development",
+    "postinstall": "webpack"
+  },
+  "dependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "axios": "^0.18.0",
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^8.0.5",
+    "react": "^16.8.2",
+    "react-beautiful-dnd": "^10.0.4",
+    "react-dom": "^16.8.2",
+    "react-redux": "^6.0.0",
+    "react-router-dom": "^4.3.1",
+    "react-router-redux": "^4.0.8",
+    "redux": "^4.0.1",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3"
+  },
+  "engines": {
+    "node": "8.11.4",
+    "npm": "5.6.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://github.com/thesimpledev/pivot_track#readme"
+}
