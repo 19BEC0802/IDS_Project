@@ -1,0 +1,223 @@
+.project-show .navbar-app-left {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.workflow-container {
+  transition: all 1s cubic-bezier(0, 1, 0.5, 1);
+}
+
+.sidebar {
+  transition: all 1s cubic-bezier(0, 1, 0.5, 1);
+  z-index: 10;
+  box-shadow: 5px 0 10px 0 rgba(0,0,0,.25);
+  background-color: #2c2d2f;
+  width: 230px;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  bottom: 0;
+  border-right: 1px solid black;
+  border-top: 1px solid #3e4346;
+  position: absolute;
+}
+
+.sidebar-link {
+  padding: 8px;
+  cursor: pointer;
+  display: block;
+  color: #999;
+  font-size: 12px;
+  font-weight: 600;
+
+  &.active {
+    color: #8fc1ee;
+  }
+
+  &:hover {
+    color: #5caef6;
+  }
+
+  i {
+    font-size: 16px;
+    text-shadow: none;
+    margin-left: 8px;
+    margin-right: 12px;
+  }
+}
+
+.sidebar-show-false {
+  .sidebar {
+    width: 50px;
+
+    .sidebar-link {
+      clear: both;
+      margin-bottom: 16px;
+    }
+
+    .text {
+      font-size: 10px;
+      margin-bottom: 8px;
+    }
+
+    .sidebar-count {
+      display: block;
+      margin-top: 4px;
+      margin-bottom: 8px;
+    }
+  }
+
+  .workflow-container {
+    left: 50px;
+  }
+}
+
+.sidebar-hamburger {
+  color: #777;
+  background-color: #2c2d2f;
+  display: block;
+  padding: 8px 16px;
+  cursor: pointer;
+  text-shadow: 0;
+  border-bottom: 1px solid #222;
+  margin-bottom: 8px;
+
+  &:hover {
+    color: #5caef6;
+  }
+}
+
+.workflow-header {
+  width: 100%;
+  background-color: #2c2d2f;
+  display: block;
+  padding: 10px;
+  font-weight: 600;
+  color: $white;
+  font-size: 14px;
+}
+
+.workflow-points {
+  color: #ccc;
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 10px;
+}
+
+.sidebar-count {
+  float: right;
+  color: #777;
+  background-color: #333;
+  float: right;
+  font-size: 10px;
+  margin-right: 8px;
+  border-radius: 50%;
+  margin-top: -2px;
+  padding: 3px 5px;
+}
+
+.active .sidebar-count {
+  color: #8fc1ee;
+}
+
+.workflow-container {
+  position: absolute;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  top: 35px;
+  left: 230px;
+  bottom: 0px;
+  right: 0px;
+  white-space: nowrap;
+  background-color: #212121;
+}
+
+.workflow {
+  position: relative;
+  vertical-align: top;
+  width: 375px;
+  display: inline-block;
+  height: 100%;
+  background-color: #484f57;
+  border-top: 1px solid #3e4346;
+  border-left: 1px solid #111;
+  border-right: 1px solid #111;
+  margin-left: 5px;
+  transition: all 1s cubic-bezier(0, 1, 0.5, 1);
+}
+
+.workflow-show-undefined {
+  width: 0;
+  opacity: 0;
+  margin: 0;
+  border: 0;
+  overflow: hidden;
+}
+
+.workflow-hide-button {
+  background: none;
+  border: 0;
+  color: #777;
+  vertical-align: middle;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: -5px;
+  margin-right: 10px;
+}
+
+.add-story-button {
+  float: right;
+  background: none;
+  border: 0;
+  font-size: 12px;
+  font-weight: 600;
+  color: $white;
+  cursor: pointer;
+  padding: 8px 8px;
+  border-radius: 3px;
+  margin-top: -6px;
+
+  i {
+    margin-right: 8px;
+  }
+
+  &:hover {
+    background-color: $orange-dark;
+  }
+}
+
+.project-loading {
+  background: #212121;
+  bottom: 0;
+  color: $white;
+  font-size: 36px;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 35px;
+  width: 100%;
+  z-index: 100;
+
+  img {
+    width: 100px;
+  }
+}
+
+.project-loading-content {
+  margin-top: 250px;
+}
+
+.project-loading-true {
+  @keyframes rotate {
+    0% { 
+      transform: rotate(480deg)
+    }
+    100% {
+      tranform: rotate(0deg)
+    }
+  }
+  img {
+    animation: rotate 1.5s infinite alternate ease-out;
+  }
+}

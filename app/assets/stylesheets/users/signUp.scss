@@ -1,0 +1,36 @@
+.session {
+  background-image: image_url("landing-jumbo-background");
+  min-height: 100vh;
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding-top: 150px;
+
+  .logo {
+    display: block;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}
+
+.session-header-slogan {
+  border-top: 1px solid #ccc;
+  color: $text-secondary;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  padding: 20px 20px 0;
+}
+
+.session-footer {
+  color: $text-secondary;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 50px;
+
+  a {
+    color: $blue-primary;
+    margin-left: 5px;
+  }
+}

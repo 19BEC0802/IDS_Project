@@ -1,0 +1,152 @@
+.landing {
+  background-image: image_url("landing-jumbo-background");
+  background-position: top 65px center;
+  background-repeat: no-repeat;
+  color: #222;
+}
+
+.landing-jumbo {
+  padding: 150px 0;
+}
+
+.landing-jumbo-slogan {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 30px 0;
+}
+
+.landing-signup-form {
+  border-radius: 3px;
+  background-color: $white;
+  margin-left: 50px;
+  padding: 32px 24px;
+  border: 1px solid #eee;
+
+  label {
+    color: #aaa;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+}
+
+.landing-signup-form-title {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: $text-secondary;
+  font-weight: 600;
+}
+
+.landing-signup-form-input {
+  border-radius: 3px;
+  display: block;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  border: none;
+  border: 1px solid #eee;
+  width: 62%;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.landing-signup-form-button {
+  background-color: $blue-primary;
+  border: none;
+  border-radius: 3px;
+  color: $white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 10px;
+  padding: 10px;
+  transition: 0.5s background-color;
+
+  &:hover {
+    background-color: $blue-dark;
+  }
+}
+
+.landing-signup-form-button.demo {
+  background-color: $green-primary;
+  border-color: $green-dark;
+  display: inline-block;
+
+  &:hover {
+    background-color: $green-dark;
+  }
+}
+
+// TODO: pull box-shadow into mixin
+
+.landing-feature {
+  margin-bottom: 60px;
+
+  span {
+    font-weight: 700;
+  }
+}
+
+.landing-feature-large {
+  text-align: center;
+}
+
+.landing-feature-small {
+  @extend %clear;
+}
+
+.landing-feature-large-title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.landing-feature-large-body {
+  font-size: 16px;
+  color: $text-secondary;
+  padding: 0 80px;
+}
+
+.landing-feature-small-body {
+  color: $text-secondary;
+}
+
+.landing-feature-small-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  padding-top: 90px;
+}
+
+.landing-feature-small-left {
+  img {
+    float: left;
+    margin-right: 50px;
+    width: 40%;
+  }
+}
+
+.landing-feature-small-right {
+  img {
+    float: right;
+    margin-left: 50px;
+    width: 40%;
+  }
+}
+
+.landing-signup-form-demo {
+  font-weight: 600;
+  margin-top: 10px;
+  color: $text-secondary;
+
+  a {
+    color: $blue-primary;
+  }
+}
+
+.get-started {
+  margin-top: 50px;
+  padding: 8px 12px;
+  font-size: 16px;
+}

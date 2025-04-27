@@ -1,0 +1,137 @@
+.project-index {
+  background-color: $grey-light;
+  height: 100vh;
+}
+
+.navbar-app {
+  @extend %clear;
+
+  background-color: #05608a;
+  border-bottom: 1px solid #212121;
+  padding: 5px 20px;
+}
+
+.navbar-app-left {
+  color: $white;
+  float: left;
+  font-weight: 700;
+  font-family: 'Roboto Slab', serif;
+}
+
+.navbar-dashboard {
+  background-color: $white;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar-dashboard-button {
+  @extend %border-radius;
+
+  cursor: pointer;
+  color: $white;  
+  float: right;
+  margin-top: 11px;
+  border: $green-dark;
+  font-size: 14px;
+  padding: 10px;
+  background-color: #57ac55;
+  font-weight: 600;
+  transition: 0.5s background-color;
+
+  &:hover {
+    background-color: $green-dark;
+  }
+}
+
+.navbar-dashboard-tab {
+  border-bottom: 3px solid $orange-primary;
+  display: inline-block;
+  font-weight: 600;
+  padding: 18px 15px 15px;
+  color: $text-secondary;
+}
+
+.projectIndex-myprojects {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-weight: 700;
+
+  i {
+    margin-right: 10px;
+  }
+}
+
+.projectIndexItem {
+  background-color: $white;
+  border: 1px solid #ddd;
+  width: 49%;
+  margin-right: 2%;
+  float: left;
+  margin-bottom: 20px;
+  border-radius: 5px;
+
+  i,
+  button {
+    color: #dedede;
+    &:hover {
+      color: #bbb;
+    }
+  }
+}
+
+.projectIndexItem:nth-of-type(2n) {
+  margin-right: 0;
+}
+
+.projectIndexItem-header {
+  font-weight: 600;
+  padding: 10px 20px;
+  border-bottom: 3px solid #eee;
+  color: $text-secondary;
+
+  a {
+    &:hover {
+      text-decoration: underline;
+      color: $blue-primary;
+    }
+  }
+
+  i {
+    margin-right: 10px;
+  }
+}
+
+.projectIndexItem-header-buttons {
+  float: right;
+
+  button {
+    @extend %border-radius;
+
+    border: 0;
+    cursor: pointer;
+    padding: 5px;
+    margin-left: 5px;
+  }
+}
+
+.project-placeholder {
+  padding: 150px 0;
+  text-align: center;
+  background: white;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-weight: 700;
+  font-size: 20px;
+
+  i {
+    margin-right: 20px;
+  }
+  
+  h4 {
+    margin-bottom: 50px;
+  }
+
+  button {
+    display: inline-block;
+    float: none;
+  }
+}

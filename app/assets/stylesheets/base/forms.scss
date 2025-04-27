@@ -1,0 +1,100 @@
+.form,
+.form-input,
+.form-submit,
+.form-errors {
+  @extend %border-radius;
+}
+
+.form {
+  background-color: $white;
+  border: 1px solid #eee;
+  margin: 0 auto;
+  padding: 30px;
+  width: 350px;
+}
+
+.form-header {
+  text-align: center;
+  font-weight: 600;
+}
+
+.form-title {
+  color: #444; // FIXME: variables only
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.form-subtitle {
+  color: #ccc;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.form-label {
+  color: $text-secondary;
+  font-size: 14px;
+  font-weight: 600;
+
+  span {
+    float: right;
+    font-size: 10px;
+    color: #ccc;
+    margin-top: 4px;
+  }
+}
+
+.form-input {
+  text-align: left;
+  border: 1px solid #eee;
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  padding: 10px; 
+  width: 100%;
+  transition: all 0.5s;
+
+  &:focus {
+    border: 1px solid $green-primary;
+    box-shadow: 0 0 5px $green-primary;
+  }
+}
+
+.form-footer {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.form-submit {
+  background-color: #3677c0;
+  border-color: $blue-dark;
+  color: $white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 10px;
+  margin-top: 20px;
+  padding: 10px 100px;
+  transition: 0.5s background-color;
+
+  &:hover {
+    background-color: $blue-dark;
+  }
+}
+
+.form-errors {
+  background-color: #FFF7F8;
+  border-left: 3px solid #E48E8E;
+  color: #DF5557;
+  font-size: 14px;
+  margin-bottom: 20px;
+  padding: 10px 15px;
+}
+
+.disabled-true {
+  pointer-events: none;
+  background-color: #dedede; // FIXME: variable
+  border: 1px solid #ccc; // FIXME: variable
+}
